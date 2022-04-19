@@ -1,9 +1,15 @@
 import React from 'react';
 
-import './App.css';
+import styled from 'styled-components';
 
-function App() {
-	return <div className="App"></div>;
-}
+const Container = styled.div`
+	max-width: 1200px;
+	border: 1px solid;
+	margin: 0 auto;
+`;
+
+const App = () => {
+	return <Container></Container>;
+};
 
 export default App;
