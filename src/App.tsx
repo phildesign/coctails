@@ -1,15 +1,20 @@
 import React from 'react';
 
 import styled from 'styled-components';
-
-const Container = styled.div`
-	max-width: 1200px;
-	border: 1px solid;
-	margin: 0 auto;
-`;
+import GlobalStyles from './styles/global';
+import { Container, Title1 } from './styles/components';
+import Search from './compontents/Search/Search';
 
 const App = () => {
-	return <Container></Container>;
+	return (
+		<Container>
+			<GlobalStyles />
+			<Title1 weight={700} textAlign="center">
+				Coctails
+			</Title1>
+			<Search />
+		</Container>
+	);
 };
 
 export default App;
