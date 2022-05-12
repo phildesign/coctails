@@ -1,4 +1,5 @@
 import React from 'react';
+import { BsSearch } from 'react-icons/bs';
 
 import styled from 'styled-components';
 import { Button, Input } from '../../styles/components';
@@ -13,7 +14,9 @@ const Search = () => {
 	return (
 		<StyledSearch>
 			<Input defaultValue="" type="text" />
-			<Button>Search</Button>
+			<Button>
+				<BsSearch />
+			</Button>
 		</StyledSearch>
 	);
 };
